@@ -1,8 +1,4 @@
-public class Armor extends WorldObject {
-	//collidable = false;
-	//location = ?;
-	//interactable = true;
-	//size = ?;
+public class Armor{
 	private String name;
 	private double weight;
 	private int level;
