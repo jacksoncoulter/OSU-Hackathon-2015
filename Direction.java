@@ -1,4 +1,3 @@
-
 public class Direction {
 
 	public final int NORTH = 0;
