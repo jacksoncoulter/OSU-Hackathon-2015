@@ -26,4 +26,7 @@ public abstract class WorldObject {
 		return interactable;
 	}
 	
+	public abstract void draw();
+	public abstract void interact();
+	
 }
