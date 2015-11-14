@@ -1,10 +1,10 @@
 
 public abstract class WorldObject {
 
-	private Location location;
-	private Size size;
-	private boolean collidable;
-	private boolean interactable;
+	protected Location location;
+	protected Size size;
+	protected boolean collidable;
+	protected boolean interactable;
 	
 	public Location getLocation() {
 		return this.location;
@@ -25,5 +25,8 @@ public abstract class WorldObject {
 	public boolean canInteract() {
 		return interactable;
 	}
+	
+	public abstract void draw();
+	public abstract void interact();
 	
 }
