@@ -25,6 +25,7 @@ public class ItemSlot{
 		maxStackSize = DEFAULT_MAX_STACK_SIZE;
 	}
 
+	//Other methods
 	public boolean incrementStack(){
 		if (stackable && count < maxStackSize){
 			count++;
@@ -33,6 +34,7 @@ public class ItemSlot{
 			return false;
 		}
 	}
+
 	//Getters and Setters
 	public String getItemName(){
 		return storedItem.getName();
@@ -50,8 +52,12 @@ public class ItemSlot{
 		return storedItem.weight * count;
 	}
 	
-	public boolean setObject(Item i){
-		storedItem = i;
+	public boolean setMaxStackSize(int size){
+		if (size >= maxStackSize){
+			maxStackSize = size;
+			return true;
+		}
+		return false;
 	}
 	
 }
