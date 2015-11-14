@@ -4,7 +4,10 @@ public class LifeSkill extends Skill {
 	
 	
 	public LifeSkill(){
-		
+		this.name = "Health";
+		this.baseValue = 10;
+		this.modifier = 0;
+		this.currentMax = 10;
 	}
 	
 	public LifeSkill(String s, int base, int mod, int max){
