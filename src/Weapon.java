@@ -17,7 +17,7 @@ public class Weapon {
 		weaponLength = 2.0;
 		weaponWidth = 1.0;
 		attackLength = 0.75;
-		attackDelay = 0.5;		
+		attackDelay = 0.5;
 	}
 
 	public Weapon(String name, Skill type, int dam, double weight, double length, double width, double attLeng, double attDelay){
