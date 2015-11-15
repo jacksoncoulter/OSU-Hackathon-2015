@@ -1,0 +1,8 @@
+- Tree
+- Bush
+- Chest
+- Sword
+- Player
+- Enemy
+- Grass
+- Rock
