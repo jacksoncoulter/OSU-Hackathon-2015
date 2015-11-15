@@ -23,6 +23,10 @@ public class Weapon extends Item{
 		this.attackLength = attLeng;
 		this.attackDelay = attDelay;
 	}
+	
+	public void attack() {
+		
+	}
 
 	//Getters and Setters
 	public Skill getType() {
