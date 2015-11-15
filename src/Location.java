@@ -25,4 +25,29 @@ public class Location {
 		direction = new Direction(d);
 	}
 	
+	public Location(Point p, float d) {
+		coordinates = new Point(p.x, p.y);
+		direction = new Direction(d);
+	}
+	
+	public Location(int x, int y, float d) {
+		coordinates = new Point(x, y);
+		direction = new Direction(d);
+	}
+	
+	public Point getCoordinates() {
+		return coordinates;
+	}
+	
+	public int getCoordinateX() {
+		return (int)coordinates.x;
+	}
+	
+	public int getCoordinateY() {
+		return (int)coordinates.y;
+	}
+	
+	public Direction getDirection() {
+		return direction;
+	}
 }

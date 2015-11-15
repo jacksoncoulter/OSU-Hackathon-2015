@@ -1,51 +1,40 @@
 
-public class Weapon {
-	protected String name;
+public class Weapon extends Item{
+	
 	protected Skill skillType;
 	protected int damage;
-	protected double weight;
 	protected double weaponLength;
 	protected double weaponWidth;
 	protected double attackLength;
 	protected double attackDelay;
 
+	//Constructors
 	public Weapon() {
-		name = "Short Sword";
-		skillType = new Skill("Swords", 1, 0);
-		damage = 10;
-		weight = 1.0;
-		weaponLength = 2.0;
-		weaponWidth = 1.0;
-		attackLength = 0.75;
-		attackDelay = 0.5;
+		this("Short Sword", 1.0, 3, new Skill("Swords", 1, 0), 10, 2.0, 1.0, 0.75, 0.5);
 	}
 
-	public Weapon(String name, Skill type, int dam, double weight, double length, double width, double attLeng,
+	public Weapon(String name, double weight, int value, Skill type, int dam, double length, double width, double attLeng,
 			double attDelay) {
-		this.name = name;
+		super(name, weight, value);
 		this.skillType = type;
 		this.damage = dam;
-		this.weight = weight;
 		this.weaponLength = length;
 		this.weaponWidth = width;
 		this.attackLength = attLeng;
 		this.attackDelay = attDelay;
 	}
-
-	public String getName() {
-		return name;
+	
+	public void attack() {
+		
 	}
 
+	//Getters and Setters
 	public Skill getType() {
 		return skillType;
 	}
 
 	public int getDamage() {
 		return damage;
-	}
-
-	public double getWeight() {
-		return weight;
 	}
 
 	public double getWeaponLength() {
@@ -69,29 +58,37 @@ public class Weapon {
 		return true;
 	}
 
-	public boolean setWeight(double value) {
-		weight = value;
-		return true;
+	public boolean setWeaponLength(double wl) {
+		if (wl >= 0){
+			weaponLength = wl;
+			return true;
+		}else{
+			return false;
+		}
 	}
 
-	public boolean setWeaponLength(double value) {
-		weaponLength = value;
-		return true;
+	public boolean setWeaponWidth(double ww) {
+		if (ww >= 0){
+			weaponWidth = ww;
+			return true;
+		}
+		return false;
 	}
 
-	public boolean setWeaponWidth(double value) {
-		weaponWidth = value;
-		return true;
+	public boolean setAttackLength(double al) {
+		if (al >= 0){
+			attackLength = al;
+			return true;
+		}
+		return false;
 	}
 
-	public boolean setAttackLength(double value) {
-		attackLength = value;
-		return true;
-	}
-
-	public boolean setAttackDelay(double value) {
-		attackDelay = value;
-		return true;
+	public boolean setAttackDelay(double ad) {
+		if (ad >= 0){
+			attackDelay = ad;
+			return true;
+		}
+		return false;
 	}
 
 }

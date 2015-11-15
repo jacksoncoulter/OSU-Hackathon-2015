@@ -1,17 +1,12 @@
 public class Direction {
-
-	public final int NORTH = 0;
-	public final int WEST = 1;
-	public final int EAST = 2;
-	public final int SOUTH = 3;
 	
-	private int direction;
+	private float direction;
 	
 	public Direction() {
-		direction = NORTH;
+		direction = 0.0f;
 	}
 	
-	public Direction(int direction) {
+	public Direction(float direction) {
 		this.direction = direction;
 	}
 	
@@ -19,7 +14,7 @@ public class Direction {
 		this.direction = other.direction;
 	}
 	
-	public int getDirection() {
+	public float getDirection() {
 		return direction;
 	}
 	

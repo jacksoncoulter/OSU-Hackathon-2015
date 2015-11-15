@@ -1,66 +1,45 @@
-public class Armor{
-	private String name;
-	private double weight;
+
+public class Armor extends Item{
+	
 	private int level;
 	private int defense;
 	
+	//Constructors
+	public Armor(){
+		this("Nakey", 1.0, 1, 1, 10);
+	}
 	
-	public Armor(String name, double weight, int level, int defense){
-		this.name = name;
-		this.weight = weight;
+	public Armor(String name, double weight, int value, int level, int defense){
+		super(name, weight, value);
 		this.level = level;
 		this.defense = defense;
-		
 	}
 	
-	public Armor(){
-		this("Nakey", 1.0, 1, 10);
-		
-	}
-		
-	public String getName(){
-		return this.name;
-		
-	}
+	//Getters and Setters
 	
 	public int getDefense(){
 		return this.defense;
-		
 	}
-	
-	public double getweight(){
-		return this.weight;
-		
-	}
-	
 	
 	public int getLevel(){
 		return this.level;
-		
-	}
-	
-	public boolean setName(String name){
-		this.name = name;
-		return true;
 	}
 	
 	public boolean setDefense(int defense){
-		this.defense = defense;
-		return true;
-	}
-	
-	public boolean setWeight(double weight){
-		this.weight = weight;
-		return true;
+		if (defense < 0){
+			this.defense = defense;
+			return true;
+		}else{
+			return false;
+		}
 	}
 	
 	public boolean setLevel(int level){
-		this.level = level;
-		return true;
+		if (level >= 1){
+			this.level = level;
+			return true;
+		}else{
+			return false;
+		}
 	}
-
 }
-
-
-
-

@@ -1,8 +1,8 @@
 public class Item{
 	
-	private String name;
-	private double weight;
-	private int value;
+	protected String name;
+	protected double weight;
+	protected int value;
 	
 	//Constructors
 	public Item(){
