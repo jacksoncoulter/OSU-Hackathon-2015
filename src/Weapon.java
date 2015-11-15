@@ -10,10 +10,10 @@ public class Weapon extends Item{
 
 	//Constructors
 	public Weapon() {
-		weapon("Short Sword", 1.0, 3, new Skill("Swords", 1, 0), 10, 3.0, 2.0, 1.0, 0.75, 0.5);
+		this("Short Sword", 1.0, 3, new Skill("Swords", 1, 0), 10, 2.0, 1.0, 0.75, 0.5);
 	}
 
-	public Weapon(String name, double weight, int value, Skill type, int dam, double weight, double length, double width, double attLeng,
+	public Weapon(String name, double weight, int value, Skill type, int dam, double length, double width, double attLeng,
 			double attDelay) {
 		super(name, weight, value);
 		this.skillType = type;
@@ -55,23 +55,36 @@ public class Weapon extends Item{
 	}
 
 	public boolean setWeaponLength(double wl) {
-		weaponLength = wl;
-		return true;
+		if (wl >= 0){
+			weaponLength = wl;
+			return true;
+		}else{
+			return false;
+		}
 	}
 
 	public boolean setWeaponWidth(double ww) {
-		weaponWidth = ww;
-		return true;
+		if (ww >= 0){
+			weaponWidth = ww;
+			return true;
+		}
+		return false;
 	}
 
 	public boolean setAttackLength(double al) {
-		attackLength = al;
-		return true;
+		if (al >= 0){
+			attackLength = al;
+			return true;
+		}
+		return false;
 	}
 
 	public boolean setAttackDelay(double ad) {
-		attackDelay = ad;
-		return true;
+		if (ad >= 0){
+			attackDelay = ad;
+			return true;
+		}
+		return false;
 	}
 
 }
