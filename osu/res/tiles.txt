@@ -7,3 +7,4 @@
 - Grass
 - Rock
 - Fireball - http://opengameart.org/content/simple-fireball
+- Fence - http://opengameart.org/content/wooden-fence-2d
