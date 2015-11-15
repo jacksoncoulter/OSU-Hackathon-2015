@@ -1,11 +1,25 @@
+<<<<<<< HEAD
 - Tree
 - Bush
-- Chest - http://opengameart.org/content/chest-pack
+- Chest
 - Sword
 - Player
 - Enemy
 - Grass
 - Rock
 - Armor
+=======
+- Tree - http://opengameart.org/content/2d-trees-and-leaf-textures-64x
+- Bush - http://opengameart.org/content/bush-1616
+- Chest - http://opengameart.org/content/chest-pack
+- Sword - http://opengameart.org/content/dagger-64x64, http://opengameart.org/content/war-axe-64x64
+- Player - http://opengameart.org/content/2d-character-sprite-redshrike-mod
+- Enemy - http://opengameart.org/content/slime-0, http://opengameart.org/content/simple-fireball
+- Grass
+- Rock
+- Armor
 	-Plate = http://opengameart.org/content/weapons-3
 	-Chain = http://opengameart.org/content/weapons-3
+- Fireball - http://opengameart.org/content/simple-fireball
+- Fence - http://opengameart.org/content/wooden-fence-2d
+>>>>>>> origin/master

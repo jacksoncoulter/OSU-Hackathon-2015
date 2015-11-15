@@ -1,15 +1,15 @@
-import "ItemSlot.java";
+import java.util.ArrayList;
 
 public class Inventory{
 	
-	double maxWeight;
-	ArrayList<ItemSlot> slots;
-	boolean maxCapacity;
-	double DEFAULT_MAX_WEIGHT = 50;
+	private double maxWeight;
+	private ArrayList<ItemSlot> slots;
+	private boolean maxCapacity;
+	private static final double DEFAULT_MAX_WEIGHT = 50;
 
 	//Constructors
 	public Inventory(){
-		Inventory(DEFAULT_MAX_WEIGHT, false);
+		this(DEFAULT_MAX_WEIGHT, false);
 	}
 	
 	public Inventory(double mw, boolean mc){
@@ -35,7 +35,7 @@ public class Inventory{
 			slots.remove(index);
 			return discardable;
 		}
-		reuturn null;
+		return null;
 	}
 	
 	//Getters and Setters
@@ -44,7 +44,11 @@ public class Inventory{
 	}
 	
 	public boolean setMaxWeight(double mw){
-		maxWeight = mw;
+		if (mw >= getWeight()) {
+			maxWeight = mw;
+			return true;
+		} else
+			return false;
 	}
 	
 	public double getWeight(){
@@ -59,7 +63,7 @@ public class Inventory{
 		return maxCapacity;
 	}
 
-	public boolean increaseMaxWeight(double weight){
+	public void increaseMaxWeight(double weight) {
 		maxWeight += weight;
 	}
 
