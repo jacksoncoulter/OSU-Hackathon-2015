@@ -1,8 +1,8 @@
-- Tree
-- Bush
+- Tree - http://opengameart.org/content/2d-trees-and-leaf-textures-64x
+- Bush - http://opengameart.org/content/bush-1616
 - Chest
-- Sword
+- Sword - http://opengameart.org/content/dagger-64x64
 - Player
-- Enemy
+- Enemy - http://opengameart.org/content/slime-0
 - Grass
 - Rock
