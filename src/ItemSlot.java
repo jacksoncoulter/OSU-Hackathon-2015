@@ -1,4 +1,3 @@
-import "Item.java";
 import java.util.*;
 
 public class ItemSlot{
@@ -15,7 +14,7 @@ public class ItemSlot{
 	}
 	
 	public ItemSlot(Item i, boolean stackable){
-		ItemSlot (i, stackable, 1)
+		this(i, stackable, 1);
 	}
 	
 	public ItemSlot (Item i, boolean stackable, int count){
@@ -49,7 +48,7 @@ public class ItemSlot{
 	}
 	
 	public double getWeight(){
-		return storedItem.weight * count;
+		return storedItem.getWeight() * count;
 	}
 	
 	public boolean setMaxStackSize(int size){
