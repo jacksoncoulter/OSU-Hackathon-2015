@@ -1,8 +1,11 @@
 - Tree
 - Bush
-- Chest
+- Chest - http://opengameart.org/content/chest-pack
 - Sword
 - Player
 - Enemy
 - Grass
 - Rock
+- Armor
+	-Plate = http://opengameart.org/content/weapons-3
+	-Chain = http://opengameart.org/content/weapons-3
