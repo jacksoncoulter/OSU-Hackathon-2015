@@ -1,4 +1,4 @@
-import "Item.java"
+import "Item.java";
 import java.util.*;
 
 public class ItemSlot{
@@ -11,7 +11,7 @@ public class ItemSlot{
 	
 	//Constructors
 	public ItemSlot(){
-		ItemSlot(null, false);
+		this(null, false);
 	}
 	
 	public ItemSlot(Item i, boolean stackable){

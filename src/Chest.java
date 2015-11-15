@@ -1,5 +1,5 @@
 
-public class Chest extends WorldObject {
+public class Chest extends Tile {
 	private Inventory inventory;
 	
 	public Chest(){
@@ -16,5 +16,17 @@ public class Chest extends WorldObject {
 		this.collidable = collide;
 		this.interactable = interact;
 		this.inventory = inven;
+	}
+
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void interact() {
+		// TODO Auto-generated method stub
+		
 	}
 }
