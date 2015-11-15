@@ -1,8 +1,9 @@
 - Tree - http://opengameart.org/content/2d-trees-and-leaf-textures-64x
 - Bush - http://opengameart.org/content/bush-1616
 - Chest
-- Sword - http://opengameart.org/content/dagger-64x64
-- Player
-- Enemy - http://opengameart.org/content/slime-0
+- Sword - http://opengameart.org/content/dagger-64x64, http://opengameart.org/content/war-axe-64x64
+- Player - http://opengameart.org/content/2d-character-sprite-redshrike-mod
+- Enemy - http://opengameart.org/content/slime-0, http://opengameart.org/content/simple-fireball
 - Grass
 - Rock
+- Fireball - http://opengameart.org/content/simple-fireball
