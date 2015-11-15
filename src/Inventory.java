@@ -20,20 +20,38 @@ public class Inventory{
 
 	//Other Methods
 	
-	public boolean pickUp(Item i){
-		if (i.getWeight() + getWeight() <= maxWeight){
-			slots.add(i);
-			return true;
-		}else{
-			return false;
+	public boolean pickUp(Item query){
+		return pickUp(query, 0);
+	}
+	
+	private boolean pickUp(Item query, int pos){
+		if (!query.getStackable()){
+			if (query.getWeight() + getWeight() <= maxWeight){
+				slots.add(new ItemSlot(query, true));
+				return true;
+			}else{
+				return false;
+			}
 		}
+		for (int i = pos; i < slots.size(); i++){
+			if (query.getName().equals(slots.get(i).getItemName())){
+				if (!slots.get(i).incrementStack()){
+					pickUp(query, pos+1);
+				}else{
+					return true;
+				}
+			}
+			
+		}
+		slots.add(new ItemSlot(query, true));
+		return true;
 	}
 
 	public Item drop(int index){
 		if (index < slots.size()){
-			Item discardable = slots.get(index);
+			ItemSlot discardable = slots.get(index);
 			slots.remove(index);
-			return discardable;
+			return discardable.getItem();
 		}
 		return null;
 	}
@@ -53,7 +71,7 @@ public class Inventory{
 	
 	public double getWeight(){
 		double weight = 0;
-		for (int i = 0; i < slots.size; i++)){
+		for (int i = 0; i < slots.size(); i++){
 			weight += slots.get(i).getWeight();
 		}
 		return weight;
@@ -75,5 +93,4 @@ public class Inventory{
 			return false;
 		}
 	}
-	
 }

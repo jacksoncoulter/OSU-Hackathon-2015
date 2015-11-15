@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class ItemSlot{
 	
@@ -49,6 +48,14 @@ public class ItemSlot{
 	
 	public double getWeight(){
 		return storedItem.getWeight() * count;
+	}
+	
+	public double getMaxStackSize(){
+		return maxStackSize;
+	}
+	
+	public Item getItem(){
+		return storedItem;
 	}
 	
 	public boolean setMaxStackSize(int size){

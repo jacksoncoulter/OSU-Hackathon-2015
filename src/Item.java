@@ -3,6 +3,7 @@ public class Item{
 	protected String name;
 	protected double weight;
 	protected int value;
+	protected boolean stackable;
 	
 	//Constructors
 	public Item(){
@@ -13,6 +14,13 @@ public class Item{
 		this.name = name;
 		this.weight = weight;
 		this.value = value;
+	}
+	
+	public Item(String name, double weight, int value, boolean stackable){
+		this.name = name;
+		this.weight = weight;
+		this.value = value;
+		this.stackable = stackable;
 	}
 	
 	//Getters and Setters
@@ -44,5 +52,9 @@ public class Item{
 		if (v >= 0){
 			value = v;
 		}
+	}
+	
+	public boolean getStackable(){
+		return stackable;
 	}
 }
