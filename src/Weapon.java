@@ -8,10 +8,10 @@ public class Weapon {
 	protected double weaponWidth;
 	protected double attackLength;
 	protected double attackDelay;
-	
-	public Weapon(){
+
+	public Weapon() {
 		name = "Short Sword";
-		skillType = new Skill("Swords", 1,0);
+		skillType = new Skill("Swords", 1, 0);
 		damage = 10;
 		weight = 1.0;
 		weaponLength = 2.0;
@@ -20,7 +20,8 @@ public class Weapon {
 		attackDelay = 0.5;
 	}
 
-	public Weapon(String name, Skill type, int dam, double weight, double length, double width, double attLeng, double attDelay){
+	public Weapon(String name, Skill type, int dam, double weight, double length, double width, double attLeng,
+			double attDelay) {
 		this.name = name;
 		this.skillType = type;
 		this.damage = dam;
@@ -30,67 +31,67 @@ public class Weapon {
 		this.attackLength = attLeng;
 		this.attackDelay = attDelay;
 	}
-	
-	public String getName(){
+
+	public String getName() {
 		return name;
 	}
-	
-	public Skill getType(){
+
+	public Skill getType() {
 		return skillType;
 	}
-	
-	public int getDamage(){
+
+	public int getDamage() {
 		return damage;
 	}
-	
-	public double getWeight(){
+
+	public double getWeight() {
 		return weight;
 	}
-	
-	public double getWeaponLength(){
+
+	public double getWeaponLength() {
 		return weaponLength;
 	}
-	
-	public double getWeaponWidth(){
+
+	public double getWeaponWidth() {
 		return weaponWidth;
 	}
-	
-	public double getAttackLength(){
+
+	public double getAttackLength() {
 		return attackLength;
 	}
-	
-	public double getAttackDelay(){
+
+	public double getAttackDelay() {
 		return attackDelay;
 	}
-	
-	public boolean setDamage(int value){
+
+	public boolean setDamage(int value) {
 		damage = value;
 		return true;
 	}
-	
-	public boolean setWeight(double value){
+
+	public boolean setWeight(double value) {
 		weight = value;
 		return true;
 	}
-	
-	public boolean setWeaponLength(double value){
+
+	public boolean setWeaponLength(double value) {
 		weaponLength = value;
 		return true;
 	}
-	
-	public boolean setWeaponWidth(double value){
+
+	public boolean setWeaponWidth(double value) {
 		weaponWidth = value;
 		return true;
 	}
-	
-	public boolean setAttackLength(double value){
+
+	public boolean setAttackLength(double value) {
 		attackLength = value;
 		return true;
 	}
-	
-	public boolean setAttackDelay(double value){
+
+	public boolean setAttackDelay(double value) {
 		attackDelay = value;
 		return true;
 	}
-	
+
 }

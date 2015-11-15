@@ -14,16 +14,7 @@ public class Armor{
 	}
 	
 	public Armor(){
-		Armor("Nakey", 1.0, 1, 10);
-		
-	}
-	
-	public void draw(){
-		
-		
-	}
-	
-	public void interact(){
+		this("Nakey", 1.0, 1, 10);
 		
 	}
 		

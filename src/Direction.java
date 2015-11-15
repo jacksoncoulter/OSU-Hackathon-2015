@@ -14,4 +14,16 @@ public class Direction {
 	public Direction(int direction) {
 		this.direction = direction;
 	}
+	
+	public Direction(Direction other) {
+		this.direction = other.direction;
+	}
+	
+	public int getDirection() {
+		return direction;
+	}
+	
+	public void setDirection(int direction) {
+		this.direction = direction;
+	}
 }
